@@ -660,17 +660,6 @@
     "source_type": "comprehensive_seed"
   },
   {
-    "title": "Virtual Dental Consultations",
-    "domain": "Healthcare",
-    "opportunity": "Many patients avoid dental visits due to inconvenience or fear, leading to untreated oral health issues.",
-    "gaps": "Current solutions rely on in-person visits, limiting access for busy or anxious individuals. There is a need for a convenient and comfortable way to consult with dentists remotely.",
-    "solution": "Develop a platform for virtual dental consultations, where patients can video chat with dentists, receive advice, and schedule appointments. Implement secure messaging for sharing images and discussing treatment options.",
-    "preview": "Connect with a dentist from the comfort of your home.",
-    "id": 55809,
-    "generated_at": "2025-08-18T16:36:45.024283",
-    "source_type": "search_generated"
-  },
-  {
     "title": "AI-powered Dental Diagnosis",
     "domain": "Healthcare Technology",
     "opportunity": "There is a need for more efficient and accurate dental diagnosis using technology.",

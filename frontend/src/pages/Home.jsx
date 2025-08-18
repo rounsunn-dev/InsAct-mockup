@@ -3,6 +3,9 @@ import SearchBar from '../components/SearchBar';
 import StoryCard from '../components/StoryCard';
 import Navbar from '../components/Navbar';
 
+const API_BASE = import.meta.env.VITE_BACKEND_API_URL;
+
+
 function Home({ stories = [], onStoryClick }) {
   const [displayStories, setDisplayStories] = useState(stories);
   const [selectedDomain, setSelectedDomain] = useState('All');
@@ -44,7 +47,7 @@ const handleSearch = async (query) => {
   setIsSearching(true);
 
   try {
-    const response = await fetch('http://127.0.0.1:8000/search-smart', {
+    const response = await fetch(`${API_BASE}/search-smart`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

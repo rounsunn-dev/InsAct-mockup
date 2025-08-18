@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import ChatInput from '../components/ChatInput';
 
+const API_BASE = import.meta.env.VITE_BACKEND_API_URL;
+
+
 function StoryDetail({ story, onBack }) {
   const [enrichedStory, setEnrichedStory] = useState(null);
   const [messages, setMessages] = useState([]);
@@ -14,7 +17,7 @@ function StoryDetail({ story, onBack }) {
 
   const loadEnrichedStory = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/stories/${story.id}/enriched`);
+      const response = await fetch(`${API_BASE}/stories/${story.id}/enriched`);
       const enriched = await response.json();
       setEnrichedStory(enriched);
     } catch (error) {
